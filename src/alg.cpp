@@ -1,9 +1,8 @@
 // Copyright 2021 NNTU-CS
 
 int cbinsearch(int *arr, int size, int value) {
-  int right = size - 1, left = 0, count = 0,mid;
+  int right = size - 1, left = 0, count = 0, mid;
     bool flag = false;
-    
     while ((left <= right) && (flag != true)) {
         mid = (left + right) / 2;
         if (arr[mid] == value) flag = true; 
@@ -13,5 +12,5 @@ int cbinsearch(int *arr, int size, int value) {
     if (flag){
         return mid; 
     } 
-    else return-1;
+    else return 0;
 }
